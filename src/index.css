@@ -1,0 +1,87 @@
+body {
+  background: #000;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo-icon {
+  color: #ff474c;
+  font-size: 28px;
+  font-weight: bold;
+}
+.genre-filter {
+  margin: 15px 0px;
+}
+
+.genre-filter button {
+  margin: 5px 5px 0 0;
+  padding: 0 15px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #373535;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+button.active {
+  background-color: #ff474c;
+}
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movies-by-year {
+  flex-basis: 100%;
+  margin-bottom: 40px;
+}
+.movies-by-year h2 {
+  color: #fff;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.movie {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.movie-info {
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.movie-info h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.movie-info p {
+  margin: 0;
+}
